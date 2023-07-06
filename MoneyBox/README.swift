@@ -7,4 +7,5 @@
 
 //import Foundation
 
-// Infomation on Jonathan Simmons project
+// Infomation on Jonathan Simmons project:
+// More to follow
