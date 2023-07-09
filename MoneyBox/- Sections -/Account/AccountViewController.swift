@@ -47,7 +47,7 @@ final class AccountViewController: UIViewController {
         let number = String(viewModel.totalPlanValue)
         
         accountView.welcomeText.text = "Welcome back, \(name)."
-        accountView.totalPlanValueText.text = "Your Total Plan Value: £\(number)"
+        accountView.totalPlanValueText.text = "Your Total Plan Value:  £\(number)"
     }
     
     private func configureView() {
