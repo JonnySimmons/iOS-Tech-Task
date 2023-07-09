@@ -1,71 +1,56 @@
 
-# Moneybox iOS Technical Challenge
+#  Jonathan Simmons - Task Solution
 
-## The Brief
+The solution completes all of the criteria specified:
+- A login screen for existing users
+- An accounts summary that holds the individual accounts
+- A final individual accounts page
+- A button that uses the APIs oneoffpayments as requested
 
-To create a 'light' version of the Moneybox app that will allow existing users to login and check their account balance, as well as viewing their Moneybox savings. 
-- To fork this repository to your private repository and implement the solution.
- 
-### The app should have
-- A login screen to allow existing users to sign in
-- A screen to show the accounts the user holds, e.g. ISA, GIA
-- A screen to show some details of the account, including a simple button to add money to its moneybox.
-- The button will add a fixed amount of £10. It should use the `POST /oneoffpayments` endpoint provided, and the account's Moneybox amount would be updated.
+Login and Accounts pages are fully integrated with the Networking API.
 
-A prototype wireframe of all 3 screens is provided as a guideline. You are free to provide additional information if you wish.
-![](wireframe.png)
+This solution fulfills what you were looking for by:
+- Demonstrating the **MVVM architecture** and adheres to coding conventions and patterns
+- Uses autolayout with your preference of **UIKit**, I could complete this in SwiftUI if it was required
+- Implements unit tests on the Networking API with the JSONs provided
+- **Accessibility** by using dynamic type has been utilised for customer experience
+- iOS 13 Build target
+- The Application runs without any errors
+- No third party library used
+- No persistence of user and login and timeout occurs via the API
+- Showcased what I can produce and bring to the team
 
-### What we are looking for
- - Demonstration of coding style, conventions and patterns.
- - Use of autolayout (preferably UIKit).
- - Implementation of unit tests.
- - Any accessibility feature would be a bonus.
- - The application must run on iOS 13 or later.
- - The application must compile and run on Xcode and be debugged in Xcode's iOS simulator.
- - Any 3rd party library should be integrated using Swift Package Manager.
- - No persistence of the user is required.
- - Showcase what you can do.
+If you have any questions please feel free to ask them as I am enthusiastic to discuss this project and have enjoyed completing it.
 
-### API Usage
-The Networking methods and Models for requests and responses are ready-made in the Networking module of the project.
 
-#### Base URL & Test User
-The base URL for the moneybox sandbox environment is `https://api-test02.moneyboxapp.com/`. </br>
-You can log in using the following user:
+I have attached a number of screenshots to make it easier for you to view my solution without running the project in the simulator.
 
-|  Username          | Password         |
-| ------------- | ------------- |
-| test+ios2@moneyboxapp.com  | P455word12  |
 
-#### Authentication
-You should obtain a bearer token from the Login response, and attach it as an Authorization header for the endpoints. Helper methods in the API/Base folder should be used for that.
-(Note: The BearerToken has a sliding expiration of 5 mins).
+## Screenshots
 
-| Key  |  Value  |
-| ------------- | ------------- |
-| Authorization |  Bearer TsMWRkbrcu3NGrpf84gi2+pg0iOMVymyKklmkY0oI84= |
+### Login Screen
+![Login light](https://github.com/JonnySimmons/iOS-Tech-Task/assets/116376835/421672eb-e39d-43e4-bdf7-a34b0f58ea3f)
+![Login Dark](https://github.com/JonnySimmons/iOS-Tech-Task/assets/116376835/e4950525-fedd-4e94-ad1a-2673944606b0)
 
-#### API Call Hint
+### Accounts Screen
+![Account Summary Light](https://github.com/JonnySimmons/iOS-Tech-Task/assets/116376835/048df2c0-fa31-4a4c-b153-91ec8c2838cd)
+![Account Summary Dark](https://github.com/JonnySimmons/iOS-Tech-Task/assets/116376835/822386a6-944b-4383-bf35-01debc85d5ea)
 
-```
-let dataProvider = DataProvider()
-dataProvider.login(request: request, completion: completion)
-```
-request: Initialize your request model </br>
-Completion: Handle your API success and failure cases
+### Individual Account Screen
+![Individual Accounts 1 Light](https://github.com/JonnySimmons/iOS-Tech-Task/assets/116376835/3c88e7ec-e97f-41d1-b554-e264d96b5d01)
+![Individual Accounts 1 Dark](https://github.com/JonnySimmons/iOS-Tech-Task/assets/116376835/969a888a-3239-4f02-9357-f1d2d073c71c)
 
-## Unit Tests
-The MoneyBoxTests folder includes stubbed data to easily mock the responses needed for unit testing
+![Individual Accounts 2 Light](https://github.com/JonnySimmons/iOS-Tech-Task/assets/116376835/7b431223-4714-450b-86f7-a61a38a2b274)
+![Individual Accounts 2 Dark](https://github.com/JonnySimmons/iOS-Tech-Task/assets/116376835/05670823-6825-45b5-9972-a93ca44b0f6a)
 
-#### Usage Hint
-You can create a DataProviderMock class via inject DataProviderLogic protocol </br>
-You can mock response in Login.json file like this:
-```
-StubData.read(file: "Login", callback: completion)
-```
 
-### How to Submit your solution:
- - To share your Github repository with the user valerio-bettini.
- - (Optional) Provide a readme in markdown which outlines your solution.
+### Errors and Activity Indicators
+![Errors](https://github.com/JonnySimmons/iOS-Tech-Task/assets/116376835/b3ad7e73-8cf7-42f5-b92a-145cc0ababa8)
+![Activity Indicators](https://github.com/JonnySimmons/iOS-Tech-Task/assets/116376835/b928c493-cce7-40ca-8a8d-0ae779001243)
 
-## Good luck!
+
+## Contact
+
+Jonathan Simmons - simmonsjonny@gmail.com
+
+Project Link: https://github.com/JonnySimmons/iOS-Tech-Task
