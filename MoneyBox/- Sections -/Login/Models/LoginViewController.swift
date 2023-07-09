@@ -34,10 +34,10 @@ final class LoginViewController: UIViewController, UITextFieldDelegate {
         
         /// In place for easy login if needed
 
-//        #if DEBUG
-//                loginView.emailTextField.text = "test+ios2@moneyboxapp.com"
-//                loginView.passwordTextField.text = "P455word12"
-//        #endif
+        #if DEBUG
+                loginView.emailTextField.text = "test+ios2@moneyboxapp.com"
+                loginView.passwordTextField.text = "P455word12"
+        #endif
     }
     
     // MARK: Private methods

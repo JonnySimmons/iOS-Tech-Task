@@ -47,7 +47,7 @@ final class AccountViewController: UIViewController {
         let number = String(viewModel.totalPlanValue)
         
         accountView.welcomeText.text = "Welcome back, \(name)."
-        accountView.totalPlanValueText.text = "£\(number)"
+        accountView.totalPlanValueText.text = "Your Total Plan Value: £\(number)"
     }
     
     private func configureView() {
@@ -80,11 +80,6 @@ final class AccountViewController: UIViewController {
         accountView.tableView.delegate = self
         accountView.tableView.separatorStyle = .none
         accountView.tableView.backgroundColor = UIColor.MB.grey
-    }
-    
-    private func updateTotalPlanValueLabel() {
-        let totalPlanValue = String(format: "£%.2f", self.viewModel.totalPlanValue)
-        self.accountView.totalPlanValueText.text = "\(totalPlanValue)"
     }
 }
 

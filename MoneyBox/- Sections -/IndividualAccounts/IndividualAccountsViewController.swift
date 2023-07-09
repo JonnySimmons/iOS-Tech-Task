@@ -1,9 +1,9 @@
-///
-///  IndividualAccountsViewController.swift
-///  MoneyBox
-///
-///  Created by Jonathan Simmons on 06/07/2023.
-///
+//
+//  IndividualAccountsViewController.swift
+//  MoneyBox
+//
+//  Created by Jonathan Simmons on 06/07/2023.
+//
 
 import UIKit
 
