@@ -1,8 +1,6 @@
 
 #  Jonathan Simmons - Task Solution
 
-I completed the task programmatically to show my skills as a developer.
-
 The solution completes all of the criteria specified:
 - A login screen for existing users
 - An accounts summary that holds the individual accounts
@@ -35,9 +33,8 @@ I have attached a number of screenshots to make it easier for you to view my sol
 ![Login Dark](https://github.com/JonnySimmons/iOS-Tech-Task/assets/116376835/e4950525-fedd-4e94-ad1a-2673944606b0)
 
 ### Accounts Screen
-![Accounts Summary Light](https://github.com/JonnySimmons/iOS-Tech-Task/assets/116376835/573d2f2f-767a-4635-a334-20c89a3fe8d2)
-![Accounts Summary Dark](https://github.com/JonnySimmons/iOS-Tech-Task/assets/116376835/94806764-d5d1-4a40-b71c-efcfb6f1718a)
-
+![Account Summary Light](https://github.com/JonnySimmons/iOS-Tech-Task/assets/116376835/048df2c0-fa31-4a4c-b153-91ec8c2838cd)
+![Account Summary Dark](https://github.com/JonnySimmons/iOS-Tech-Task/assets/116376835/822386a6-944b-4383-bf35-01debc85d5ea)
 
 ### Individual Account Screen
 ![Individual Accounts 1 Light](https://github.com/JonnySimmons/iOS-Tech-Task/assets/116376835/3c88e7ec-e97f-41d1-b554-e264d96b5d01)
