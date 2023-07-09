@@ -6,21 +6,25 @@
 //
 
 import UIKit
+import Networking
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
+    
     var window: UIWindow?
-    var navigationController: UINavigationController?
-    var accountViewController: AccountViewController?
-    var productViewController: IndividualAccountViewController?
+    let sessionManager = SessionManager()
+    
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         
         /// Setting main window view
         window = UIWindow(frame: UIScreen.main.bounds)
         
-        let loginViewController = LoginViewController()
-        navigationController = UINavigationController(rootViewController: loginViewController)
+        let loginViewModel = LoginViewModel(sessionManager: sessionManager)
+        let loginViewController = LoginViewController(viewModel: loginViewModel)
+        
+        let navigationController = UINavigationController(rootViewController: loginViewController)
+        
         window?.rootViewController = navigationController
         window?.makeKeyAndVisible()
         

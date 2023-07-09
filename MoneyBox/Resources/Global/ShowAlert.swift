@@ -7,12 +7,11 @@
 
 import UIKit
 
-    /// Error message organisation
+/// Error message organisation
 class ShowAlert {
-    static func popUp(title: String, message: String, inViewController viewController: UIViewController, completion: (() -> Void)? = nil) {
+    static func popUp(title: String? = nil, message: String, inViewController viewController: UIViewController, completion: (() -> Void)? = nil) {
         
         let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
-        
         
         /// Colors in place in case dark mode active in settings
         alert.view.backgroundColor = UIColor(named: "GreyColor")
@@ -25,6 +24,7 @@ class ShowAlert {
         
         /// Addition of cancel alert and access to viewController
         alert.addAction(cancelAlert)
+        
         viewController.present(alert, animated: true, completion: nil)
     }
 }

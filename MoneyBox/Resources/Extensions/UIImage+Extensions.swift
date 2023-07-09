@@ -1,11 +1,12 @@
 //
-//  Extensions.swift
+//  UIImage+Extensions.swift
 //  MoneyBox
 //
 //  Created by Jonathan Simmons on 06/07/2023.
 //
 
 import UIKit
+
 
 /// Extension to UIImage to enable the resizing of the Moneybox logo
 extension UIImage {

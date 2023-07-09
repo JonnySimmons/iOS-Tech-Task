@@ -48,6 +48,11 @@
                BlueprintName = "MoneyBoxTests"
                ReferencedContainer = "container:MoneyBox.xcodeproj">
             </BuildableReference>
+            <SkippedTests>
+               <Test
+                  Identifier = "AccountInformationTests/testLoginAPI()">
+               </Test>
+            </SkippedTests>
          </TestableReference>
          <TestableReference
             skipped = "NO">
@@ -56,6 +61,17 @@
                BlueprintIdentifier = "B2CA46E72793508A0041B3A5"
                BuildableName = "MoneyBoxUITests.xctest"
                BlueprintName = "MoneyBoxUITests"
+               ReferencedContainer = "container:MoneyBox.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO"
+            parallelizable = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "F0C7A3C42A56EC7C000348B2"
+               BuildableName = "MoneyBoxTesting.xctest"
+               BlueprintName = "MoneyBoxTesting"
                ReferencedContainer = "container:MoneyBox.xcodeproj">
             </BuildableReference>
          </TestableReference>
